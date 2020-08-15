@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- General Graardor Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>General_Graardor_Helmet</defName>
+		<label>General Graardor Helmet</label>
+		<description>A huge war chief</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <texPath>Things/Headgear/General_Graardor_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.99</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.99</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.99</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>70</Steel>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>JDSGeneralGraardorSet</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSAnvil</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Headgear/General_Graardor_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>SpacerMilitary</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>
